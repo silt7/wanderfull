@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "13600452a3c70e5dce1943ca877e45a5",
+    "content-hash": "15a68e8983c14f7f73c3d934cd0f9a2a",
     "packages": [
         {
             "name": "barryvdh/laravel-ide-helper",
@@ -1370,16 +1370,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v5.8.24",
+            "version": "v5.8.25",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "bb2a0afef35f508f77c049c51f04087a14de0055"
+                "reference": "7c5f0f5a0854aa559d122ab83f776a9e50406a24"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/bb2a0afef35f508f77c049c51f04087a14de0055",
-                "reference": "bb2a0afef35f508f77c049c51f04087a14de0055",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/7c5f0f5a0854aa559d122ab83f776a9e50406a24",
+                "reference": "7c5f0f5a0854aa559d122ab83f776a9e50406a24",
                 "shasum": ""
             },
             "require": {
@@ -1513,7 +1513,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2019-06-19T16:40:24+00:00"
+            "time": "2019-06-25T14:31:45+00:00"
         },
         {
             "name": "laravel/tinker",
@@ -1580,16 +1580,16 @@
         },
         {
             "name": "laravelcollective/html",
-            "version": "v5.8.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/LaravelCollective/html.git",
-                "reference": "0e360143d3476fe4141d267a260c140569fa207b"
+                "reference": "fd12a0ef760c0ee07a98ff033caf74ae080cfbf0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/LaravelCollective/html/zipball/0e360143d3476fe4141d267a260c140569fa207b",
-                "reference": "0e360143d3476fe4141d267a260c140569fa207b",
+                "url": "https://api.github.com/repos/LaravelCollective/html/zipball/fd12a0ef760c0ee07a98ff033caf74ae080cfbf0",
+                "reference": "fd12a0ef760c0ee07a98ff033caf74ae080cfbf0",
                 "shasum": ""
             },
             "require": {
@@ -1608,7 +1608,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "5.8-dev"
+                    "dev-master": "5.7-dev"
                 },
                 "laravel": {
                     "providers": [
@@ -1644,43 +1644,49 @@
             ],
             "description": "HTML and Form Builders for the Laravel Framework",
             "homepage": "https://laravelcollective.com",
-            "time": "2019-03-01T22:53:41+00:00"
+            "time": "2019-03-03T19:50:25+00:00"
         },
         {
             "name": "laravelrus/sleepingowl",
-            "version": "4.99.99",
+            "version": "dev-development",
             "source": {
                 "type": "git",
                 "url": "https://github.com/LaravelRUS/SleepingOwlAdmin.git",
-                "reference": "fd45eb47fe48cf15ab65bdb5aaace77c66e28786"
+                "reference": "b235a2e8fe5971575ea196d050d1a02a0078dd68"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/LaravelRUS/SleepingOwlAdmin/zipball/fd45eb47fe48cf15ab65bdb5aaace77c66e28786",
-                "reference": "fd45eb47fe48cf15ab65bdb5aaace77c66e28786",
+                "url": "https://api.github.com/repos/LaravelRUS/SleepingOwlAdmin/zipball/b235a2e8fe5971575ea196d050d1a02a0078dd68",
+                "reference": "b235a2e8fe5971575ea196d050d1a02a0078dd68",
                 "shasum": ""
             },
             "require": {
-                "barryvdh/laravel-ide-helper": "^2.4",
+                "barryvdh/laravel-ide-helper": "^2.4.3",
                 "davejamesmiller/laravel-breadcrumbs": "^3.0",
                 "doctrine/dbal": "~2.3",
                 "erusev/parsedown": "1.*",
+                "ext-json": "*",
                 "kodicms/laravel-assets": "0.*",
                 "kodicomponents/navigation": "0.*",
                 "kodicomponents/support": "0.*",
-                "laravel/framework": "~5.2",
-                "laravelcollective/html": "5.*",
-                "php": ">=5.6.4"
+                "laravel/framework": "~5.5",
+                "laravelcollective/html": "5.5.* || 5.6.* || 5.7.*",
+                "php": ">=7.0"
             },
             "require-dev": {
                 "mockery/mockery": "0.9.*",
-                "orchestra/testbench": "~3.0",
-                "phpunit/phpunit": "~5.0"
+                "orchestra/testbench": "^3.5 || ^3.6",
+                "phpunit/phpunit": "^6.0 || ^7.0"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-development": "4.x-dev"
+                    "dev-development": "5.6.x-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "SleepingOwl\\Admin\\Providers\\SleepingOwlServiceProvider"
+                    ]
                 }
             },
             "autoload": {
@@ -1701,10 +1707,18 @@
                 {
                     "name": "Pavel Buchnev",
                     "email": "butschster@gmail.com"
+                },
+                {
+                    "name": "Dave Gabrielyan",
+                    "email": "aioslike@gmail.com"
+                },
+                {
+                    "name": "TheArdent",
+                    "email": "oleksii.yaryi@gmail.com"
                 }
             ],
             "description": "Administrative interface builder for Laravel.",
-            "homepage": "http://sleeping-owl.github.io",
+            "homepage": "http://sleepingowladmin.ru",
             "keywords": [
                 "admin",
                 "administrator",
@@ -1712,7 +1726,7 @@
                 "laravel",
                 "panel"
             ],
-            "time": "2017-08-10T15:37:33+00:00"
+            "time": "2019-06-20T11:29:29+00:00"
         },
         {
             "name": "league/flysystem",
